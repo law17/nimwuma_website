@@ -31,7 +31,7 @@ The workflow builds the Jekyll site and deploys it automatically whenever `main`
 
 ## Before commercial launch
 
-- Confirm the business email in `_data/company.yml`.
+- Confirm the business email in `_data/company.yml` and set `contact.email_active: true`.
 - Complete Privacy, Terms and Security content.
 - Review pricing and package scope.
 - Replace the GitHub project URL with a custom domain later if desired.

@@ -25,7 +25,11 @@
     <div>
       <h3>Get started</h3>
       <p><a href="{{ '/contact/' | relative_url }}">Talk to {{ site.data.company.brand.name }}</a></p>
+      {% if site.data.company.contact.email_active %}
       <p><a href="mailto:{{ site.data.company.contact.email }}">{{ site.data.company.contact.email }}</a></p>
+      {% else %}
+      <p class="muted-on-dark">Business email will be published before launch.</p>
+      {% endif %}
     </div>
   </div>
   <div class="container footer-currency">

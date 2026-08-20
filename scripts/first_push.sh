@@ -4,7 +4,7 @@ set -euo pipefail
 REPO_URL="${1:-https://github.com/law17/nimwuma_website.git}"
 
 if [ ! -f "_config.yml" ] || [ ! -d "_data" ]; then
-  echo "Run this script from the root of the Nimwuma website repository." >&2
+  echo "Run this script from the root of the website repository." >&2
   exit 1
 fi
 
@@ -14,7 +14,7 @@ git init -b main 2>/dev/null || true
 
 git add .
 if ! git diff --cached --quiet; then
-  git commit -m "Initial Nimwuma website"
+  git commit -m "Initial website"
 fi
 
 if git remote get-url origin >/dev/null 2>&1; then

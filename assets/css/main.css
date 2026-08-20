@@ -64,10 +64,10 @@ code { background: var(--background); border: 1px solid var(--border); border-ra
 .primary-nav { display: flex; align-items: center; gap: 1rem; }
 .primary-nav > ul { display: flex; align-items: center; gap: .15rem; list-style: none; margin: 0; padding: 0; }
 .primary-nav a, .nav-submenu-toggle { border: 0; background: none; font: inherit; color: var(--ink); text-decoration: none; padding: .6rem .65rem; font-size: .9rem; font-weight: 650; cursor: pointer; }
-.primary-nav a:hover, .nav-submenu-toggle:hover { color: var(--teal-600); }
+.primary-nav a:hover, .nav-submenu-toggle:hover, .primary-nav a[aria-current="page"] { color: var(--teal-600); }
 .has-submenu { position: relative; }
 .submenu { position: absolute; top: calc(100% + 9px); left: 0; width: 235px; list-style: none; margin: 0; padding: .55rem; background: #fff; border: 1px solid var(--border); border-radius: 12px; box-shadow: var(--shadow); opacity: 0; visibility: hidden; transform: translateY(-5px); transition: .16s ease; }
-.has-submenu:hover .submenu, .has-submenu.submenu-open .submenu { opacity: 1; visibility: visible; transform: translateY(0); }
+.has-submenu:hover .submenu, .has-submenu:focus-within .submenu, .has-submenu.submenu-open .submenu { opacity: 1; visibility: visible; transform: translateY(0); }
 .submenu a { display: block; border-radius: 8px; }
 .submenu a:hover { background: var(--background); }
 .nav-toggle { display: none; border: 0; background: transparent; padding: 8px; }
@@ -93,6 +93,7 @@ code { background: var(--background); border: 1px solid var(--border); border-ra
 .insight-box { background: #f4fbfa; border: 1px solid #cdebe6; border-radius: 12px; padding: 15px; margin-top: 18px; }
 .insight-box p { color: var(--muted); margin: 4px 0 0; font-size: .9rem; }
 .illustrative { font-size: .76rem; color: var(--muted); margin: 12px 0 0; }
+.muted { color: var(--muted); }
 
 .two-column-cards { display: grid; grid-template-columns: repeat(2,1fr); gap: 22px; margin-top: 28px; }
 .market-card { border: 1px solid var(--border); border-radius: var(--radius-lg); padding: clamp(28px,4vw,44px); background: #fff; }
