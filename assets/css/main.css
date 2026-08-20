@@ -355,3 +355,92 @@ code { background: var(--background); border: 1px solid var(--border); border-ra
   .statement-card { min-height: auto; gap: 36px; }
   .name-card { padding: 28px 22px; }
 }
+
+/* About page typography refinement: calmer, more editorial hierarchy */
+.page-about .page-hero {
+  padding-top: 64px;
+  padding-bottom: 54px;
+}
+.page-about .page-hero h1 {
+  font-size: clamp(2.35rem, 5vw, 3.65rem);
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+.page-about .page-intro {
+  max-width: 720px;
+  font-size: clamp(1.02rem, 1.6vw, 1.16rem);
+  line-height: 1.7;
+}
+.page-about .about-section {
+  padding: 66px 0;
+}
+.page-about .section-kicker {
+  font-size: .74rem;
+  font-weight: 750;
+  letter-spacing: .12em;
+  margin-bottom: 1rem;
+}
+.page-about .about-split h2,
+.page-about .name-card h2,
+.page-about .section-title h2 {
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  line-height: 1.22;
+  letter-spacing: -0.02em;
+  font-weight: 680;
+}
+.page-about .about-copy,
+.page-about .about-philosophy .section-title p,
+.page-about .about-values .section-title p {
+  font-size: 1rem;
+  line-height: 1.75;
+}
+.page-about .promise-band strong {
+  font-size: clamp(1rem, 1.7vw, 1.2rem);
+  line-height: 1.5;
+  font-weight: 650;
+}
+.page-about .statement-card {
+  min-height: 270px;
+  padding: clamp(28px, 4vw, 42px);
+}
+.page-about .statement-card h2 {
+  font-size: clamp(1.3rem, 2.2vw, 1.72rem);
+  line-height: 1.42;
+  letter-spacing: -0.01em;
+  font-weight: 640;
+}
+.page-about .statement-label {
+  font-size: .73rem;
+  font-weight: 760;
+  letter-spacing: .11em;
+}
+.page-about .about-cycle strong {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+.page-about .about-cycle span {
+  font-size: .92rem;
+  line-height: 1.6;
+}
+.page-about .value-number {
+  margin-bottom: 18px;
+  font-weight: 800;
+}
+.page-about .value-card h3 {
+  font-size: 1.12rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+.page-about .value-card p {
+  font-size: .93rem;
+  line-height: 1.65;
+}
+@media (max-width: 650px) {
+  .page-about .page-hero { padding-top: 48px; padding-bottom: 44px; }
+  .page-about .about-section { padding: 52px 0; }
+  .page-about .statement-card { padding: 26px; }
+  .page-about .about-split h2,
+  .page-about .name-card h2,
+  .page-about .section-title h2 { font-size: 1.65rem; }
+}
