@@ -1,8 +1,7 @@
 ---
 layout: page
-title: "Talk to"
-title_brand: true
-eyebrow: "Start with the problem"
+title: "Contact"
+eyebrow: "Get in touch"
 intro: "Tell us where operational work is consuming your time and what you need help managing."
 ---
 

@@ -30,4 +30,4 @@ Deterministic calculations should be performed through controlled analytics logi
 
 The planned progression is straightforward: capture clean data, describe what happened, diagnose why, identify anomalies, forecast where justified by data quality, and support authorised action.
 
-[Talk to {{ site.data.company.brand.name }}]({{ '/contact/' | relative_url }}){: .button }
+[Contact us]({{ '/contact/' | relative_url }}){: .button }

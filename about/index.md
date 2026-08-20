@@ -96,7 +96,7 @@ wide: true
     <div class="about-copy">
       <p>{{ site.data.company.brand.name }} Operations supports businesses in Ghana through managed business operations. {{ site.data.company.brand.name }} Global extends managed operational capacity to nonresident businesses worldwide.</p>
       <p>Data &amp; Intelligence supports both, turning operational activity into clearer management information and helping businesses identify what deserves attention.</p>
-      <a class="button" href="{{ '/contact/' | relative_url }}">Talk to {{ site.data.company.brand.name }}</a>
+      <a class="button" href="{{ '/contact/' | relative_url }}">Contact us</a>
     </div>
   </div>
 </section>

@@ -36,4 +36,4 @@ Capacity-based support for businesses that need ongoing administration during th
 
 Business activity can be turned into KPIs, charts, management summaries, alerts and recommended attention. The aim is not only to complete operational work, but also to help owners understand what the work is revealing about the business.
 
-[Talk to {{ site.data.company.brand.name }}]({{ '/contact/' | relative_url }}){: .button }
+[Contact us]({{ '/contact/' | relative_url }}){: .button }
