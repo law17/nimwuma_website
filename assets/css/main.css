@@ -2,10 +2,10 @@
   --navy-950: #0d1f2a;
   --navy-900: #142a3a;
   --navy-800: #1d4055;
-  --teal-700: #0b6f68;
-  --teal-600: #0f766e;
-  --teal-500: #0e847b;
-  --teal-100: #d9f3ef;
+  --teal-700: #004f49;
+  --teal-600: #005f56;
+  --teal-500: #00796b;
+  --teal-100: #d8f1ed;
   --ink: #182024;
   --muted: #5e6970;
   --border: #dde3e6;
@@ -59,8 +59,8 @@ code { background: var(--background); border: 1px solid var(--border); border-ra
 .text-link { font-weight: 800; text-decoration: none; }
 
 .site-header { position: sticky; top: 0; z-index: 1000; background: rgba(255,255,255,.96); backdrop-filter: blur(14px); border-bottom: 1px solid rgba(221,227,230,.85); }
-.header-inner { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; }
-.brand { display: flex; align-items: center; width: 245px; text-decoration: none; }
+.header-inner { min-height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 1.2rem; }
+.brand { display: flex; align-items: center; width: 188px; text-decoration: none; flex: 0 0 auto; }
 .brand img { width: 100%; display: block; }
 .primary-nav { display: flex; align-items: center; gap: 1rem; }
 .primary-nav > ul { display: flex; align-items: center; gap: .15rem; list-style: none; margin: 0; padding: 0; }
@@ -74,7 +74,7 @@ code { background: var(--background); border: 1px solid var(--border); border-ra
 .nav-toggle { display: none; border: 0; background: transparent; padding: 8px; }
 .nav-toggle span:not(.sr-only) { display: block; width: 25px; height: 2px; background: var(--navy-900); margin: 5px 0; }
 
-.hero { padding: 88px 0 76px; overflow: hidden; background: radial-gradient(circle at 80% 20%, rgba(14,132,123,.12), transparent 33%), linear-gradient(180deg, #fff, #fbfcfd); }
+.hero { padding: 88px 0 76px; overflow: hidden; background: radial-gradient(circle at 80% 20%, rgba(0,121,107,.12), transparent 33%), linear-gradient(180deg, #fff, #fbfcfd); }
 .hero-grid, .split-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 64px; align-items: center; }
 .hero-copy { max-width: 680px; }
 .hero-lead { font-size: clamp(1.25rem, 2vw, 1.55rem); color: var(--navy-800); font-weight: 620; max-width: 660px; }
@@ -151,8 +151,8 @@ code { background: var(--background); border: 1px solid var(--border); border-ra
 
 .pricing-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; margin: 28px 0 40px; }
 .pricing-card { border: 1px solid var(--border); border-radius: var(--radius-md); padding: 24px; position: relative; background: #fff; }
-.pricing-card.featured { border-color: var(--teal-500); box-shadow: 0 12px 36px rgba(14,132,123,.12); }
-.badge { display: inline-block; background: var(--teal-100); color: #0c6b62; font-size: .72rem; font-weight: 850; padding: .3rem .5rem; border-radius: 999px; margin-bottom: 12px; }
+.pricing-card.featured { border-color: var(--teal-500); box-shadow: 0 12px 36px rgba(0,121,107,.12); }
+.badge { display: inline-block; background: var(--teal-100); color: var(--teal-700); font-size: .72rem; font-weight: 850; padding: .3rem .5rem; border-radius: 999px; margin-bottom: 12px; }
 .price { color: var(--navy-950); font-size: 2rem; font-weight: 850; margin: .5rem 0 .8rem; }
 .price .from { font-size: .9rem; color: var(--muted); font-weight: 700; }
 .price span:last-child { font-size: .85rem; color: var(--muted); font-weight: 600; }
@@ -176,7 +176,7 @@ code { background: var(--background); border: 1px solid var(--border); border-ra
 .footer-bottom nav { display: flex; gap: 8px; }
 
 @media (max-width: 1080px) {
-  .brand { width: 205px; }
+  .brand { width: 170px; }
   .primary-nav a, .nav-submenu-toggle { padding-inline: .45rem; font-size: .84rem; }
   .process-grid { grid-template-columns: repeat(3,1fr); }
 }
@@ -204,8 +204,8 @@ code { background: var(--background); border: 1px solid var(--border); border-ra
 @media (max-width: 650px) {
   .container, .container.narrow { width: min(calc(100% - 28px), var(--container)); }
   .section { padding: 64px 0; }
-  .header-inner { min-height: 68px; }
-  .brand { width: 175px; }
+  .header-inner { min-height: 64px; }
+  .brand { width: 150px; }
   h1 { font-size: clamp(2.6rem,14vw,4rem); }
   .metric-row { grid-template-columns: 1fr 1fr; }
   .metric-row > div:last-child { grid-column: 1 / -1; }

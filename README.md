@@ -54,3 +54,8 @@ Templates reference this single company-data file, so text changes propagate thr
 ## Pricing changes
 
 Edit `_data/pricing.yml`. Do not manually duplicate prices into multiple pages unless there is a deliberate copy exception.
+
+## v6 visual refinements
+
+- Reduced the header logo footprint and header height for better navigation balance.
+- Increased teal accent contrast on light backgrounds while retaining lighter teal accents on dark surfaces.
