@@ -1,0 +1,15 @@
+staging: true
+url: "https://law17.github.io"
+baseurl: "/nimwuma_website"
+lang: "en"
+timezone: "Africa/Accra"
+
+markdown: kramdown
+permalink: pretty
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - scripts

@@ -1,0 +1,66 @@
+ghana:
+  market: "Ghana Businesses"
+  currency: "GHS"
+  symbol: "GH₵"
+  note: "Ghana services are priced and billed in Ghana cedis."
+  plans:
+    - id: "business-essentials"
+      name: "Business Essentials"
+      price: "650"
+      cadence: "/month"
+      setup: 450
+      featured: false
+      summary: "Essential records, invoicing administration, receivables tracking, customer and supplier records, document organisation and monthly reporting."
+    - id: "business-operations"
+      name: "Business Operations"
+      price: "1,400"
+      cadence: "/month"
+      setup: 900
+      featured: true
+      summary: "Broader operational support including payroll preparation, CRM administration, receivables management, compliance tracking and management reporting."
+    - id: "managed-office"
+      name: "Managed Office"
+      price_from: "3,000"
+      cadence: "/month"
+      setup_from: 1500
+      featured: false
+      summary: "Ongoing managed administrative capacity including inbox management, customer administration, operational coordination and enhanced reporting."
+
+global:
+  market: "Global Businesses"
+  currency: "USD"
+  symbol: "$"
+  note: "Standard global prices are quoted in US dollars for nonresident international clients."
+  plans:
+    - id: "shared-20"
+      name: "Shared Operations 20"
+      price: "375"
+      cadence: "/month"
+      capacity: "20 human delivery hours"
+      summary: "Flexible managed support for businesses that need recurring operational capacity without a dedicated employee."
+    - id: "shared-40"
+      name: "Shared Operations 40"
+      price: "675"
+      cadence: "/month"
+      capacity: "40 human delivery hours"
+      summary: "More recurring capacity for growing administrative and customer operations."
+    - id: "shared-80"
+      name: "Shared Operations 80"
+      price: "1,350"
+      cadence: "/month"
+      capacity: "80 human delivery hours"
+      summary: "High shared capacity for businesses with substantial recurring operational workloads."
+    - id: "dedicated-operations"
+      name: "Dedicated Operations Assistant"
+      price_from: "1,650"
+      cadence: "/month"
+      summary: "A trained professional primarily assigned to your business, supported by managed systems, supervision and quality assurance."
+    - id: "dedicated-support"
+      name: "Dedicated Customer Support"
+      price_from: "1,800"
+      cadence: "/month"
+      summary: "Managed customer support for agreed channels, service hours and service levels."
+    - id: "managed-team"
+      name: "Managed Operations Team"
+      custom: true
+      summary: "Structured multi-person delivery with supervision, quality assurance, reporting and process ownership."

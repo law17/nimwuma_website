@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<section class="page-hero">
+  <div class="container narrow">
+    {% if page.eyebrow %}<p class="eyebrow">{{ page.eyebrow }}</p>{% endif %}
+    <h1>{{ page.title }}{% if page.title_brand %} {{ site.data.company.brand.name }}{% endif %}</h1>
+    {% if page.intro %}<p class="page-intro">{{ page.intro }}</p>{% endif %}
+  </div>
+</section>
+<section class="page-body">
+  <div class="container narrow prose">
+    {{ content }}
+  </div>
+</section>

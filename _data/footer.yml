@@ -1,0 +1,26 @@
+services:
+  - label: "Business Operations"
+    url: "/services/business-operations/"
+  - label: "Global Operations"
+    url: "/services/global/"
+  - label: "Data & Intelligence"
+    url: "/services/intelligence/"
+company:
+  - label: "How It Works"
+    url: "/how-it-works/"
+  - label: "Why"
+    append_brand: true
+    url: "/why-us/"
+  - label: "About"
+    url: "/about/"
+  - label: "Insights"
+    url: "/insights/"
+  - label: "Contact"
+    url: "/contact/"
+legal:
+  - label: "Privacy"
+    url: "/privacy/"
+  - label: "Terms"
+    url: "/terms/"
+  - label: "Security"
+    url: "/security/"

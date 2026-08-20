@@ -1,0 +1,13 @@
+<article class="pricing-card{% if include.plan.featured %} featured{% endif %}">
+  {% if include.plan.featured %}<span class="badge">Recommended</span>{% endif %}
+  <h3>{{ include.plan.name }}</h3>
+  {% if include.plan.custom %}
+    <p class="price">Custom</p>
+  {% elsif include.plan.price_from %}
+    <p class="price"><span class="from">From</span> {{ include.symbol }}{{ include.plan.price_from }}<span>{{ include.plan.cadence }}</span></p>
+  {% else %}
+    <p class="price">{{ include.symbol }}{{ include.plan.price }}<span>{{ include.plan.cadence }}</span></p>
+  {% endif %}
+  {% if include.plan.capacity %}<p class="capacity">{{ include.plan.capacity }}</p>{% endif %}
+  <p>{{ include.plan.summary }}</p>
+</article>

@@ -1,0 +1,42 @@
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <h2>{{ site.data.company.brand.name }}</h2>
+      <p class="footer-tagline">{{ site.data.company.brand.tagline }}</p>
+      <p>Managed business operations and intelligence for businesses in Ghana and worldwide.</p>
+      <p class="muted-on-dark">{{ site.data.company.contact.location_statement }}</p>
+    </div>
+    <div>
+      <h3>Services</h3>
+      <ul>
+        {% for item in site.data.footer.services %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.label }}{% if item.append_brand %} {{ site.data.company.brand.name }}{% endif %}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h3>Company</h3>
+      <ul>
+        {% for item in site.data.footer.company %}
+          <li><a href="{{ item.url | relative_url }}">{{ item.label }}{% if item.append_brand %} {{ site.data.company.brand.name }}{% endif %}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h3>Get started</h3>
+      <p><a href="{{ '/contact/' | relative_url }}">Talk to {{ site.data.company.brand.name }}</a></p>
+      <p><a href="mailto:{{ site.data.company.contact.email }}">{{ site.data.company.contact.email }}</a></p>
+    </div>
+  </div>
+  <div class="container footer-currency">
+    <p>Ghana services are priced in <strong>Ghana cedis (GH₵)</strong>. Global services are priced in <strong>US dollars (USD)</strong>.</p>
+  </div>
+  <div class="container footer-bottom">
+    <p>© {{ 'now' | date: '%Y' }} {{ site.data.company.brand.name }}. All rights reserved.</p>
+    <nav aria-label="Legal">
+      {% for item in site.data.footer.legal %}
+        <a href="{{ item.url | relative_url }}">{{ item.label }}{% if item.append_brand %} {{ site.data.company.brand.name }}{% endif %}</a>{% unless forloop.last %}<span aria-hidden="true">·</span>{% endunless %}
+      {% endfor %}
+    </nav>
+  </div>
+</footer>

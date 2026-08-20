@@ -1,0 +1,30 @@
+<header class="site-header" data-header>
+  <div class="container header-inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="{{ site.data.company.brand.name }} home">
+      <img src="{{ site.data.company.brand.logo | relative_url }}" alt="{{ site.data.company.brand.name }} — {{ site.data.company.brand.tagline }}">
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-nav-toggle>
+      <span class="sr-only">Toggle navigation</span>
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation" data-nav>
+      <ul>
+        {% for item in site.data.navigation %}
+          <li class="{% if item.children %}has-submenu{% endif %}">
+            {% if item.children %}
+              <button class="nav-submenu-toggle" type="button" aria-expanded="false">{{ item.label }}{% if item.append_brand %} {{ site.data.company.brand.name }}{% endif %}</button>
+              <ul class="submenu">
+                {% for child in item.children %}
+                  <li><a href="{{ child.url | relative_url }}">{{ child.label }}</a></li>
+                {% endfor %}
+              </ul>
+            {% else %}
+              <a href="{{ item.url | relative_url }}">{{ item.label }}{% if item.append_brand %} {{ site.data.company.brand.name }}{% endif %}</a>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+      <a class="button button-small" href="{{ '/contact/' | relative_url }}">Talk to {{ site.data.company.brand.name }}</a>
+    </nav>
+  </div>
+</header>
