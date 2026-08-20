@@ -9,7 +9,7 @@ layout: default
   </div>
 </section>
 <section class="page-body">
-  <div class="container narrow prose">
+  <div class="container{% unless page.wide %} narrow{% endunless %} prose">
     {{ content }}
   </div>
 </section>
