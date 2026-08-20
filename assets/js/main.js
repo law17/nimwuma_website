@@ -18,23 +18,6 @@
     });
   });
 
-  nav?.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      nav.classList.remove('is-open');
-      navToggle?.setAttribute('aria-expanded', 'false');
-    });
-  });
-
-  document.addEventListener('keydown', (event) => {
-    if (event.key !== 'Escape') return;
-    nav?.classList.remove('is-open');
-    navToggle?.setAttribute('aria-expanded', 'false');
-    document.querySelectorAll('.has-submenu.submenu-open').forEach((item) => {
-      item.classList.remove('submenu-open');
-      item.querySelector('.nav-submenu-toggle')?.setAttribute('aria-expanded', 'false');
-    });
-  });
-
   document.addEventListener('click', (event) => {
     if (!event.target.closest('.has-submenu')) {
       document.querySelectorAll('.has-submenu.submenu-open').forEach((item) => {

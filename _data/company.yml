@@ -4,13 +4,11 @@ brand:
   tagline: "Run better. Know more."
   category: "Managed Business Operations & Intelligence"
   logo: "/assets/images/brand-logo.png"
-  favicon: "/assets/images/favicon.png"
 
 description: "Managed business operations and intelligence for businesses in Ghana and worldwide."
 
 contact:
   email: "hello@nimwuma.com"
-  email_active: false
   location_statement: "Based in Ghana. Serving businesses globally."
 
 mission: "To help businesses run better by delivering reliable managed operations and turning everyday business data into clear, actionable intelligence."

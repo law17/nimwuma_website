@@ -129,31 +129,6 @@ page_class: home
   </div>
 </section>
 
-<section class="section pricing-preview">
-  <div class="container">
-    <p class="eyebrow">Services for growing businesses</p>
-    <h2 class="section-title">Start with the level of support you actually need.</h2>
-    <div class="pricing-preview-grid">
-      <div>
-        <span class="market-label">Ghana</span>
-        <h3>Business Operations</h3>
-        {% for plan in site.data.pricing.ghana.plans %}
-          <div class="price-line"><span>{{ plan.name }}</span><strong>{% if plan.price_from %}From {% endif %}{{ site.data.pricing.ghana.symbol }}{{ plan.price | default: plan.price_from }}/mo</strong></div>
-        {% endfor %}
-        <a class="text-link" href="{{ '/pricing/' | relative_url }}#ghana">View Ghana Pricing →</a>
-      </div>
-      <div>
-        <span class="market-label">Global</span>
-        <h3>Global Operations</h3>
-        <div class="price-line"><span>Shared Operations</span><strong>From $375/mo</strong></div>
-        <div class="price-line"><span>Dedicated Operations Assistant</span><strong>From $1,650/mo</strong></div>
-        <div class="price-line"><span>Dedicated Customer Support</span><strong>From $1,800/mo</strong></div>
-        <a class="text-link" href="{{ '/pricing/' | relative_url }}#global">View Global Pricing →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
 <section class="section why-section">
   <div class="container">
     <p class="eyebrow">Why {{ site.data.company.brand.name }}</p>

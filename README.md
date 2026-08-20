@@ -20,7 +20,7 @@ Repeated business information must come from one authoritative location rather t
 
 1. Confirm the final GitHub repository name. If it is not `nimwuma_website`, update `baseurl` in `_config.yml`.
 2. Confirm the public GitHub Pages URL and update `url` if needed.
-3. Secure the final domain/business email, update `contact.email` in `_data/company.yml`, then set `contact.email_active: true`.
+3. Secure the final domain/business email and update `contact.email` in `_data/company.yml`.
 4. Complete Privacy, Terms and Security content before commercial launch. Those pages are currently marked `noindex`.
 5. In GitHub: **Settings → Pages → Build and deployment → Source → GitHub Actions**.
 6. Push to `main`. The included `.github/workflows/pages.yml` builds and deploys the Jekyll site.
@@ -47,10 +47,9 @@ brand:
   legal_name: "New brand Ltd"
   tagline: "New tagline"
   logo: "/assets/images/brand-logo.png"
-  favicon: "/assets/images/favicon.png"
 ```
 
-Templates reference this single company-data file, so text changes propagate throughout the rendered site. Replace the logo/favicon assets separately if the visual identity also changes.
+Templates reference this single company-data file, so text changes propagate throughout the rendered site. Replace the logo asset separately if the visual identity also changes.
 
 ## Pricing changes
 
